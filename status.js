@@ -37,10 +37,11 @@ const data =  fs.readFileSync("test.txt","utf8")
 else if(req.url==="/del"){
   fs.unlinkSync("test.txt")
   res.end("file deleted")
-}
+  }
 
   
-              
+           
+
 })
 
 server.listen(3000,()=>{
